@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>Components - Ready Bootstrap Dashboard</title>
+	<title>Forms - Ready Bootstrap Dashboard</title>
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
@@ -98,7 +98,7 @@
 									</div>
 								</li>
 								<li>
-									<a class="see-all" href="typography.html"> <strong>See all notifications</strong> <i class="la la-angle-right"></i> </a>
+									<a class="see-all" href="typography.htmls"> <strong>See all notifications</strong> <i class="la la-angle-right"></i> </a>
 								</li>
 							</ul>
 						</li>
@@ -173,14 +173,14 @@
 								<span class="badge badge-count">5</span>
 							</a>
 						</li>
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a href="components.html">
 								<i class="la la-plus-square"></i>
 								<p>medic info</p>
 								<span class="badge badge-count">14</span>
 							</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item active">
 							<a href="forms.html">
 								<i class="la la-gamepad"></i>
 								<p>my game</p>
@@ -214,47 +214,233 @@
 								<p>4</p>
 							</a>
 						</li>
-						<!--<li class="nav-item update-pro">
-							<button  data-toggle="modal" data-target="#modalUpdate">
-								<div> To Pro</div>
-							</button>
-						</li> -->
 						<div class="text-center">
 							<a href="pricing.html"><button class="btn btn-primary">Update To Pro</button></a>
 						</div>
 					</ul>
 				</div>
 			</div>
+
+
+
 			<div class="main-panel">
 				<div class="content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="card card-header">
-								<div class="text-center">
-									<h3>Green</h1> 
-									<h4>Administrator</h2>
+					<div class="container-fluid">
+						<h4 class="page-title">Registration</h4>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="card">
+									<div class="card-header">
+										<div class="card-title">Registration user </div>
+									</div>
+									<div class="card-body">
+										<div class="form-group">
+											<label for="email">Email Address</label>
+											<input type="email" class="form-control" id="email" placeholder="Enter Email">
+											<small id="emailHelp" class="form-text text-muted">Please enter your email </small>
+										</div>
+										<div class="form-group">
+											<label for="password">Password</label>
+											<input type="password" class="form-control" id="password" placeholder="Password">
+										</div>
+										<div class="form-group">
+											<label for="password">год рождения</label>
+											<input type="password" class="form-control" id="password" placeholder="Password">
+										</div>
+										<div class="form-group form-inline">
+											<label for="inlineinput" class="col-md-3 col-form-label">Inline Input</label>
+											<div class="col-md-9 p-0">
+												<input type="text" class="form-control input-full" id="inlineinput" placeholder="Enter Input">
+											</div>
+										</div>
+										<div class="form-group has-success">
+											<label for="successInput">Success Input</label>
+											<input type="text" id="successInput" value="Success" class="form-control">
+										</div>
+										<div class="form-group has-error has-feedback">
+											<label for="errorInput">Error Input</label>
+											<input type="text" id="errorInput" value="Error" class="form-control">
+											<small id="emailHelp" class="form-text text-muted">Please provide a valid informations.</small>
+										</div>
+										<div class="form-group">
+											<label for="disableinput">Disable Input</label>
+											<input type="text" class="form-control" id="disableinput" placeholder="Enter Input" disabled>
+										</div>
+										<div class="form-check">
+											<label>Gender</label><br/>
+											<label class="form-radio-label">
+												<input class="form-radio-input" type="radio" name="optionsRadios" value=""  checked="">
+												<span class="form-radio-sign">Male</span>
+											</label>
+											<label class="form-radio-label ml-3">
+												<input class="form-radio-input" type="radio" name="optionsRadios" value="">
+												<span class="form-radio-sign">Female</span>
+											</label>
+										</div>
+										<div class="form-group">
+											<label class="control-label">
+												Static
+											</label> <!----> <p class="form-control-static">hello@themekita.com</p> <!---->  <!----></div>
+											<div class="form-group">
+												<label for="exampleFormControlSelect1">Example select</label>
+												<select class="form-control" id="exampleFormControlSelect1">
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="exampleFormControlSelect2">Example multiple select</label>
+												<select multiple class="form-control" id="exampleFormControlSelect2">
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="exampleFormControlFile1">Example file input</label>
+												<input type="file" class="form-control-file" id="exampleFormControlFile1">
+											</div>
+											<div class="form-group">
+												<label for="comment">Comment</label>
+												<textarea class="form-control" id="comment" rows="5">
+
+												</textarea>
+											</div>
+											<div class="form-check">
+												<label class="form-check-label">
+													<input class="form-check-input" type="checkbox" value="">
+													<span class="form-check-sign">Agree with terms and conditions</span>
+												</label>
+											</div>
+										</div>
+										<div class="card-action">
+											<button class="btn btn-success">Submit</button>
+											<button class="btn btn-danger">Cancel</button>
+										</div>
+									</div>
 								</div>
-							<div>
-								<a class="list-group-item list-group-flush py-3 lh-tight"> Medical policy number: 126592</a>
-								<a class="list-group-item list-group-flush py-3 lh-tight"> HIV: minus </a>
-								<a class="list-group-item list-group-flush py-3 lh-tight"> Allergy: chocolade, orange</a>
-								<a class="list-group-item list-group-flush py-3 lh-tight"> Blood type: I </a>
-								<a class="list-group-item list-group-flush py-3 lh-tight"> Mental disorders: programmer.py </a>
-								<a class="list-group-item list-group-flush py-3 lh-tight"> info: ------</a>
-								<a class="list-group-item list-group-flush py-3 lh-tight"> info: ------</a>
+								<div class="col-md-6">
+									<div class="card">
+										<div class="card-header">
+											<div class="card-title">Form Control Styles</div>
+										</div>
+										<div class="card-body">
+											<div class="form-group">
+												<label for="squareInput">Square Input</label>
+												<input type="text" class="form-control input-square" id="squareInput" placeholder="Square Input">
+											</div>
+											<div class="form-group">
+												<label for="squareSelect">Square Select</label>
+												<select class="form-control input-square" id="squareSelect">
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="pillInput">Pill Input</label>
+												<input type="text" class="form-control input-pill" id="pillInput" placeholder="Pill Input">
+											</div>
+											<div class="form-group">
+												<label for="pillSelect">Pill Select</label>
+												<select class="form-control input-pill" id="pillSelect">
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="solidInput">Solid Input</label>
+												<input type="text" class="form-control input-solid" id="solidInput" placeholder="Solid Input">
+											</div>
+											<div class="form-group">
+												<label for="solidSelect">Solid Select</label>
+												<select class="form-control input-solid" id="solidSelect">
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>											
+										</div>
+										<div class="card-action">
+											<button class="btn btn-success">Submit</button>
+											<button class="btn btn-danger">Cancel</button>
+										</div>
+									</div>
 
-							</div>
-
+									
+									<div class="card">
+										<div class="card-header">
+											<div class="card-title">Form Control Styles</div>
+										</div>
+										<div class="card-body">
+											<div class="form-group">
+												<label for="largeInput">Large Input</label>
+												<input type="text" class="form-control form-control-lg" id="largeInput" placeholder="Large Input">
+											</div>
+											<div class="form-group">
+												<label for="largeInput">Default Input</label>
+												<input type="text" class="form-control form-control" id="defaultInput" placeholder="Default Input">
+											</div>
+											<div class="form-group">
+												<label for="smallInput">Small Input</label>
+												<input type="text" class="form-control form-control-sm" id="smallInput" placeholder="Small Input">
+											</div>
+											<div class="form-group">
+												<label for="largeSelect">Large Select</label>
+												<select class="form-control form-control-lg" id="largeSelect">
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="defaultSelect">Default Select</label>
+												<select class="form-control form-control" id="defaultSelect">
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="smallSelect">Small Select</label>
+												<select class="form-control form-control-sm" id="smallSelect">
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+										<div class="card-action">
+											<button class="btn btn-success">Submit</button>
+											<button class="btn btn-danger">Cancel</button>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-
+					<footer class="footer">
+						
+					</footer>
 				</div>
-			</div>
-				<footer class="footer">
-					
-
-				</footer>
 			</div>
 		</div>
 	</div>
@@ -293,19 +479,4 @@
 <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
 <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 <script src="assets/js/ready.min.js"></script>
-<script>
-	$( function() {
-		$( "#slider" ).slider({
-			range: "min",
-			max: 100,
-			value: 40,
-		});
-		$( "#slider-range" ).slider({
-			range: true,
-			min: 0,
-			max: 500,
-			values: [ 75, 300 ]
-		});
-	} );
-</script>
 </html>

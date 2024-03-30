@@ -3,7 +3,7 @@
 
 .update-pro button {
 		padding: 13px 25px;
-	background: #4d7cfe;
+	background: #06b387ab;
 	color: #fff;
 	border-radius: 3px;
 	justify-content: center;
@@ -99,3 +99,15 @@
 .from-show-notify label{
 	padding-top: 0.65rem;
 }
+
+body {
+	background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+  }
+  
+  .container {
+	max-width: 960px;
+  }
+  
+  .pricing-header {
+	max-width: 700px;
+  }
